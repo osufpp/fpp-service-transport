@@ -1,16 +1,34 @@
 {
-  "name": "fpp-service-transport",
+  "name": "@osufpp/service-transport",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Service transport",
+  "main": "index",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint -c .eslintrc.yml lib"
   },
-  "author": "",
-  "license": "ISC",
+  "homepage": "https://github.com/osufpp/fpp-service-transport",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/osufpp/fpp-service-transport.git"
+  },
+  "bugs": {
+    "url": "https://github.com/osufpp/fpp-service-transport/issues",
+    "email": "developer@beardon.com"
+  },
+  "author": "Tyson Cleary <tyson@beardon.com> (https://github.com/tyscorp)",
+  "license": "MIT",
   "dependencies": {
+    "@osufpp/logger": "^1.0.0-beta.1",
     "amqplib": "^0.4.0",
     "bluebird": "^3.2.1",
     "config": "^1.19.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^4.1.8",
+    "eslint": "^1.10.3",
+    "eslint-config-beardon": "latest"
+  },
+  "engines": {
+    "node": ">= 4.0"
   }
 }
