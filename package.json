@@ -1,6 +1,6 @@
 {
   "name": "@osufpp/service-transport",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Service transport",
   "main": "index",
   "scripts": {
@@ -19,17 +19,16 @@
   "license": "MIT",
   "dependencies": {
     "@osufpp/logger": "^1.0.0-beta.1",
-    "amqplib": "^0.4.1",
-    "bluebird": "^3.3.4",
-    "config": "^1.19.0",
-    "lodash": "^4.7.0"
+    "amqplib": "^0.7.0",
+    "bluebird": "^3.7.2",
+    "config": "^3.3.3",
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
-    "babel-eslint": "^4.1.8",
-    "eslint": "^1.10.3",
-    "eslint-config-beardon": "latest"
+    "eslint": "^7.20.0",
+    "eslint-plugin-json": "^2.1.2"
   },
   "engines": {
-    "node": ">= 4.0"
+    "node": ">= 8.0"
   }
 }
