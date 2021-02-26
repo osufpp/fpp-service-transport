@@ -11,7 +11,7 @@ const getConnection = _.once(function getConnection() {
         throw new Error('No RabbitMQ credentials provided');
     }
 
-    const connection = amqp.connect(`amqp://${config.rabbitmq.url}${config.rabbitmq.vhost}`);
+    const connection = amqp.connect(`amqp://${ config.rabbitmq.url }${ config.rabbitmq.vhost }`);
 
     connection.catch(function (e) {
         logger.error(e);
@@ -30,7 +30,7 @@ module.exports = function createChannel() {
                 }
             }
             catch (err) {
-                logger.error(`[AMPQ] Error disposing of channel:\n${err}`);
+                logger.error(`[AMPQ] Error disposing of channel:\n${ err }`);
             }
         });
 };
